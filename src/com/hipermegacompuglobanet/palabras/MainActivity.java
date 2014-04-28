@@ -104,6 +104,9 @@ public class MainActivity extends Activity {
 					Toast.LENGTH_SHORT)).show();
 			break;
 		case R.id.action_about:
+			Intent intent = new Intent(this, AboutActivity.class);
+			startActivity(intent);
+			break;
 		case R.id.action_settings:
 		default:
 			(Toast.makeText(getApplicationContext(), "Not implemented",

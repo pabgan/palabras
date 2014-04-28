@@ -9,9 +9,11 @@
     <string name="search_hint">Search for a definition</string>
     <string name="action_about">About</string>
     
-    
-    <string name="hello_world">Hello world!</string>
-    
     <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_about">About Palabras</string>
+        
+    <string name="about_message">Developed by <b>Pablo Ganuza</b>. (pabloganuza@gmail.com)</string>
+    <string name="about_source_code">Source code at https://github.com/pablerkas/palabras</string>
 
+    <string name="hello_world">Hello world!</string>
 </resources>
