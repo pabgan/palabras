@@ -8,6 +8,10 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.webkit.WebSettings;
+import android.webkit.WebView;
+import android.widget.ProgressBar;
 import android.widget.SearchView;
 import android.widget.Toast;
 
@@ -18,14 +22,14 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		Log.d(TAG, "onCreate()");
 		super.onCreate(savedInstanceState);
-		// setContentView(R.layout.activity_main);
-		// String hello = getResources().getString(R.string.hello_world);
+		setContentView(R.layout.activity_main);
 
 		// Get the intent, verify the action and get the query
 		Intent intent = getIntent();
 		if (Intent.ACTION_SEARCH.equals(intent.getAction())) {
 			String query = intent.getStringExtra(SearchManager.QUERY);
 			Log.d(TAG, "onCreate().Searching: " + query);
+			doSearch(query);
 		}
 	}
 
@@ -53,7 +57,29 @@ public class MainActivity extends Activity {
 		if (Intent.ACTION_SEARCH.equals(intent.getAction())) {
 			String query = intent.getStringExtra(SearchManager.QUERY);
 			Log.d(TAG, "onNewIntent().Searching: " + query);
+
+			doSearch(query);
 		}
+	}
+
+	private void doSearch(String query) {
+		WebView myWebView = (WebView) findViewById(R.id.activity_main_webView);
+		WebSettings webSettings = myWebView.getSettings();
+		webSettings.setJavaScriptEnabled(true);
+
+		ProgressBar pb = (ProgressBar) findViewById(R.id.activity_main_progressBar);
+
+		if (query != null && !query.isEmpty()) {
+			myWebView.setVisibility(View.GONE);
+			pb.setVisibility(View.VISIBLE);
+			myWebView
+					.loadUrl("http://lema.rae.es/drae/srv/search?val=" + query);
+			myWebView.setVisibility(View.VISIBLE);
+			pb.setVisibility(View.GONE);
+		} else {
+			Log.e(TAG, "query not cool");
+		}
+
 	}
 
 	@Override
