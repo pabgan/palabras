@@ -4,13 +4,14 @@ import android.app.Activity;
 import android.app.SearchManager;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.webkit.WebSettings;
 import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.ProgressBar;
 import android.widget.SearchView;
 import android.widget.Toast;
@@ -18,11 +19,35 @@ import android.widget.Toast;
 public class MainActivity extends Activity {
 	private final String TAG = MainActivity.class.getSimpleName();
 
+	private final String SEARCH_URI_RAE = "http://lema.rae.es/drae/srv/search?val=";
+
+	private WebView webView;
+	private ProgressBar progressBar;
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		Log.d(TAG, "onCreate()");
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+
+		progressBar = (ProgressBar) findViewById(R.id.activity_main_progressBar);
+		webView = (WebView) findViewById(R.id.activity_main_webView);
+		webView.setWebViewClient(new WebViewClient() {
+			@Override
+			public void onPageStarted(WebView view, String url, Bitmap favicon) {
+				progressBar.setVisibility(View.VISIBLE);
+				webView.setVisibility(View.GONE);
+			}
+
+			@Override
+			public void onPageFinished(WebView view, String url) {
+				// Show webview and hide progress bar
+				webView.setVisibility(View.VISIBLE);
+				progressBar.setVisibility(View.GONE);
+			}
+		});
+
+		webView.getSettings().setJavaScriptEnabled(true);
 
 		// Get the intent, verify the action and get the query
 		Intent intent = getIntent();
@@ -63,23 +88,11 @@ public class MainActivity extends Activity {
 	}
 
 	private void doSearch(String query) {
-		WebView myWebView = (WebView) findViewById(R.id.activity_main_webView);
-		WebSettings webSettings = myWebView.getSettings();
-		webSettings.setJavaScriptEnabled(true);
-
-		ProgressBar pb = (ProgressBar) findViewById(R.id.activity_main_progressBar);
-
 		if (query != null && !query.isEmpty()) {
-			myWebView.setVisibility(View.GONE);
-			pb.setVisibility(View.VISIBLE);
-			myWebView
-					.loadUrl("http://lema.rae.es/drae/srv/search?val=" + query);
-			myWebView.setVisibility(View.VISIBLE);
-			pb.setVisibility(View.GONE);
+			webView.loadUrl(SEARCH_URI_RAE + query);
 		} else {
-			Log.e(TAG, "query not cool");
+			Log.e(TAG, "Query not cool");
 		}
-
 	}
 
 	@Override
