@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Palabras</string>
+    <string name="app_label">*Palabras*</string>
+    
+    <string name="action_settings">Ajustes</string>
+    <string name="action_search">Buscar</string>
+    <string name="search_hint">Buscar definición</string>
+    <string name="action_about">Acerca</string>
+    
+    <string name="hello_world">Hola mundo!</string>
+    
+    <string name="title_activity_main">MainActivity</string>
+
+</resources>
