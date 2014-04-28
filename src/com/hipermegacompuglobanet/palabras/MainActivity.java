@@ -42,24 +42,6 @@ public class MainActivity extends Activity {
 		// Assumes current activity is the searchable activity
 		searchView.setSearchableInfo(searchManager
 				.getSearchableInfo(getComponentName()));
-		searchView.setIconifiedByDefault(false); // Do not iconify the widget;
-													// expand it by default
-
-		// Configure the search info and add any event listeners
-		// searchView.setOnQueryTextListener(new OnQueryTextListener() {
-		//
-		// @Override
-		// public boolean onQueryTextSubmit(String query) {
-		//
-		//
-		// return true;
-		// }
-		//
-		// @Override
-		// public boolean onQueryTextChange(String newText) {
-		// return false;
-		// }
-		// });
 
 		return super.onCreateOptionsMenu(menu);
 	}
