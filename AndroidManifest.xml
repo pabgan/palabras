@@ -18,6 +18,7 @@
         <activity
             android:name="com.hipermegacompuglobanet.palabras.MainActivity"
             android:label="@string/app_name"
+            android:screenOrientation="portrait"
             android:launchMode="singleTop" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -40,7 +41,8 @@
         <activity
             android:name="com.hipermegacompuglobanet.palabras.AboutActivity"
             android:label="@string/title_activity_about"
-            android:theme="@android:style/Theme.Holo.Dialog" >
+            android:theme="@android:style/Theme.Holo.Dialog"
+            android:screenOrientation="portrait" >
         </activity>
     </application>
 
