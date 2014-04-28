@@ -12,7 +12,7 @@
     <string name="title_activity_main">MainActivity</string>
     <string name="title_activity_about">About Palabras</string>
         
-    <string name="about_message">Developed by <b>Pablo Ganuza</b>. (pabloganuza@gmail.com)</string>
+    <string name="about_message">Developed by <b>Pablo Ganuza Vidal</b>. (pabloganuza@gmail.com)</string>
     <string name="about_source_code">Source code at https://github.com/pablerkas/palabras</string>
 
     <string name="hello_world">Hello world!</string>
