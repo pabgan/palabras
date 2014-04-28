@@ -16,4 +16,5 @@
     <string name="about_source_code">Source code at https://github.com/pablerkas/palabras</string>
 
     <string name="hello_world">Hello world!</string>
+    <string name="not_implemented">Not implemented</string>
 </resources>

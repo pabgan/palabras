@@ -110,8 +110,9 @@ public class MainActivity extends Activity {
 			break;
 		case R.id.action_settings:
 		default:
-			(Toast.makeText(getApplicationContext(), "Not implemented",
-					Toast.LENGTH_SHORT)).show();
+			(Toast.makeText(getApplicationContext(),
+					getString(R.string.not_implemented), Toast.LENGTH_SHORT))
+					.show();
 			break;
 		}
 

@@ -9,11 +9,12 @@
     <string name="search_hint">Buscar definición</string>
     <string name="action_about">Acerca de</string>
     
-    <string name="about_message">Desarrollado por <b>Pablo Ganuza Vidal</b>. (pabloganuza@gmail.com)</string>
-    <string name="about_source_code">Código fuente en https://github.com/pablerkas/palabras</string>
-    
     <string name="title_activity_main">MainActivity</string>
     <string name="title_activity_about">Acerca de Palabras</string>
     
-    <string name="hello_world">Hola mundo!</string>
+    <string name="about_message">Desarrollado por <b>Pablo Ganuza Vidal</b>. (pabloganuza@gmail.com)</string>
+    <string name="about_source_code">Código fuente en https://github.com/pablerkas/palabras</string>
+    
+    <string name="hello_world">¡Hola mundo!</string>
+    <string name="not_implemented">No implementado</string>
 </resources>
