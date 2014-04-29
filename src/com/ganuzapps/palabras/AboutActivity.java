@@ -1,7 +1,9 @@
-package com.hipermegacompuglobanet.palabras;
+package com.ganuzapps.palabras;
 
 import android.app.Activity;
 import android.os.Bundle;
+
+import com.ganuzapps.palabras.R;
 
 public class AboutActivity extends Activity {
 

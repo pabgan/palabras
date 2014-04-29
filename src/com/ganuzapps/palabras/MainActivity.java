@@ -1,4 +1,4 @@
-package com.hipermegacompuglobanet.palabras;
+package com.ganuzapps.palabras;
 
 import android.app.Activity;
 import android.app.SearchManager;
@@ -6,6 +6,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
+import android.provider.SearchRecentSuggestions;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.Menu;
@@ -24,6 +25,9 @@ public class MainActivity extends Activity {
 
 	private WebView webView;
 	private ProgressBar progressBar;
+
+	// private SearchSuggestionsProvider searchRecentSuggestionsProvider;
+	private SearchRecentSuggestions searchRecentSuggestions;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -49,6 +53,9 @@ public class MainActivity extends Activity {
 		});
 
 		webView.getSettings().setJavaScriptEnabled(true);
+		searchRecentSuggestions = new SearchRecentSuggestions(this,
+				SearchSuggestionsProvider.AUTHORITY,
+				SearchSuggestionsProvider.MODE);
 
 		// Get the intent, verify the action and get the query
 		Intent intent = getIntent();
@@ -90,6 +97,7 @@ public class MainActivity extends Activity {
 
 	private void doSearch(String query) {
 		if (query != null && !query.isEmpty()) {
+			searchRecentSuggestions.saveRecentQuery(query, null);
 			webView.loadUrl(SEARCH_URI_RAE + query);
 		} else {
 			Log.e(TAG, "Query not cool");
