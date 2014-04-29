@@ -3,5 +3,6 @@
     android:label="@string/app_label"
     android:hint="@string/search_hint"
     android:searchSuggestAuthority="com.ganuzapps.palabras.SearchSuggestionsProvider"
-    android:searchSuggestSelection=" ?" >
+    android:searchSuggestSelection=" ?"
+    android:includeInGlobalSearch="true" >
 </searchable>
