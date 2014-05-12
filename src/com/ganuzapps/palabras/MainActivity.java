@@ -113,14 +113,15 @@ public class MainActivity extends Activity {
 					Toast.LENGTH_SHORT)).show();
 			break;
 		case R.id.action_about:
-			Intent intent = new Intent(this, AboutActivity.class);
-			startActivity(intent);
+			startActivity(new Intent(this, AboutActivity.class));
 			break;
 		case R.id.action_settings:
+			startActivity(new Intent(this, SettingsActivity.class));
+			break;
 		default:
 			(Toast.makeText(getApplicationContext(),
-					getString(R.string.not_implemented), Toast.LENGTH_SHORT))
-					.show();
+					getString(R.string.general_not_implemented),
+					Toast.LENGTH_SHORT)).show();
 			break;
 		}
 

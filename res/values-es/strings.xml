@@ -1,20 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <!-- General -->
     <string name="app_name">Palabras</string>
     <string name="app_label">*Palabras*</string>
+    <string name="hello_world">¡Hola mundo!</string>
+    <string name="general_not_implemented">No implementado</string>
     
-    <string name="action_settings">Ajustes</string>
+    <!-- Action bar -->
+    <string name="action_preferences">Ajustes</string>
     <string name="action_search">Buscar</string>
     <string name="search_hint">Buscar definición</string>
     <string name="action_about">Acerca de</string>
     
-    <string name="title_activity_main">MainActivity</string>
-    <string name="title_activity_about">Acerca de Palabras</string>
+    <!-- MainActivity -->
+    <string name="title_activity_main">MainActivity</string>    
     
+    <!-- AboutActivity -->
+    <string name="title_activity_about">Acerca de Palabras</string>
     <string name="about_message">Desarrollado por <b>Pablo Ganuza Vidal</b>. (pabloganuza@gmail.com)</string>
     <string name="about_source_code">Código fuente en https://github.com/pablerkas/palabras</string>
-    
-    <string name="hello_world">¡Hola mundo!</string>
-    <string name="not_implemented">No implementado</string>
+
+    <!-- Settings -->
+    <string name="title_activity_settings">Preferencias</string>
+    <string name="pref_category_privacy">Privacidad</string>
+    <string name="pref_title_clear_search_history">Limpiar historial de búsqueda</string>
+    <string name="pref_summary_clear_search_history">Eliminar sugerencias de barra de búsqueda</string>
+    <string name="pref_confirmation_clear_search_history">¿Está seguro de que desea limpiar el historial de búsquedas definitivamente?\n\nEsta acción no puede deshacerse.</string>
 </resources>

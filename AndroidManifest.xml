@@ -16,7 +16,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".MainActivity"
+            android:name="com.ganuzapps.palabras.MainActivity"
             android:label="@string/app_name"
             android:launchMode="singleTop"
             android:screenOrientation="portrait" >
@@ -39,7 +39,7 @@
             android:value=".MainActivity" />
 
         <activity
-            android:name=".AboutActivity"
+            android:name="com.ganuzapps.palabras.AboutActivity"
             android:label="@string/title_activity_about"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Holo.Dialog" >
@@ -47,8 +47,14 @@
 
         <!-- Content provider for search suggestions -->
         <provider
-            android:name=".SearchSuggestionsProvider"
+            android:name="com.ganuzapps.palabras.SearchSuggestionsProvider"
             android:authorities="com.ganuzapps.palabras.SearchSuggestionsProvider" />
+
+        <activity
+            android:name="com.ganuzapps.palabras.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:theme="@android:style/Theme.Holo" >
+        </activity>
     </application>
 
 </manifest>
