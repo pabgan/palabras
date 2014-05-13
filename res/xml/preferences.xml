@@ -8,6 +8,14 @@
             android:key="pref_key_clear_search_history"
             android:summary="@string/pref_summary_clear_search_history"
             android:title="@string/pref_title_clear_search_history" />
+
+        <ListPreference
+            android:entries="@array/definition_providers_list_entries"
+            android:entryValues="@array/definition_providers_list_values"
+            android:key="pref_key_definition_provider"
+            android:summary="@string/pref_summary_definition_provider"
+            android:title="@string/pref_title_definition_provider"
+            android:defaultValue="http://lema.rae.es/drae/srv/search?val=" />
     </PreferenceCategory>
 
 </PreferenceScreen>

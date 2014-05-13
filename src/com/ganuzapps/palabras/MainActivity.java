@@ -4,8 +4,10 @@ import android.app.Activity;
 import android.app.SearchManager;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.provider.SearchRecentSuggestions;
 import android.util.Log;
 import android.view.KeyEvent;
@@ -21,7 +23,7 @@ import android.widget.Toast;
 public class MainActivity extends Activity {
 	private final String TAG = MainActivity.class.getSimpleName();
 
-	private final String SEARCH_URI_RAE = "http://lema.rae.es/drae/srv/search?val=";
+	private final String SEARCH_URI_DEFAULT = "http://lema.rae.es/drae/srv/search?val=";
 
 	private WebView webView;
 	private ProgressBar progressBar;
@@ -98,7 +100,15 @@ public class MainActivity extends Activity {
 	private void doSearch(String query) {
 		if (query != null && !query.isEmpty()) {
 			searchRecentSuggestions.saveRecentQuery(query, null);
-			webView.loadUrl(SEARCH_URI_RAE + query);
+			SharedPreferences sharedPref = PreferenceManager
+					.getDefaultSharedPreferences(this);
+			String definitionProvider = sharedPref.getString(
+					SettingsActivity.DEFINITION_PROVIDER, SEARCH_URI_DEFAULT);
+
+			Log.d(TAG, "Definition provider on preferences: "
+					+ definitionProvider);
+
+			webView.loadUrl(definitionProvider + query);
 		} else {
 			Log.e(TAG, "Query not cool");
 		}

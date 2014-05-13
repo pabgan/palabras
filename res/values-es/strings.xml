@@ -27,4 +27,6 @@
     <string name="pref_title_clear_search_history">Limpiar historial de búsqueda</string>
     <string name="pref_summary_clear_search_history">Eliminar sugerencias de barra de búsqueda</string>
     <string name="pref_confirmation_clear_search_history">¿Está seguro de que desea limpiar el historial de búsquedas definitivamente?\n\nEsta acción no puede deshacerse.</string>
+    <string name="pref_title_definition_provider">Proveedor de definiciones</string>
+    <string name="pref_summary_definition_provider">Servicio web utilizado para mostrar los resultados de las búsquedas.</string>
 </resources>

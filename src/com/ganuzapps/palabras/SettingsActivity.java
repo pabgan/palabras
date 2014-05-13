@@ -10,6 +10,8 @@ import android.os.Bundle;
 public class SettingsActivity extends Activity {
 	private final String TAG = SettingsActivity.class.getSimpleName();
 
+	public static final String DEFINITION_PROVIDER = "pref_key_definition_provider";
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
