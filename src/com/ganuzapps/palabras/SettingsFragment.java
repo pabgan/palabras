@@ -75,25 +75,5 @@ public class SettingsFragment extends PreferenceFragment {
 						return true;
 					}
 				});
-
-		Preference searchProviderPreference = (Preference) findPreference(PREFERENCE_SEARCH_PROVIDER);
-		// searchProviderPreference.setOnPreferenceChangeListener(new
-		// OnPreferenceChangeListener() {
-		//
-		// @Override
-		// public boolean onPreferenceChange(Preference preference, Object
-		// newValue) {
-		// // TODO Auto-generated method stub
-		// switch ((String) newValue) {
-		// case value:
-		//
-		// break;
-		//
-		// default:
-		// break;
-		// }
-		// return false;
-		// }
-		// });
 	}
 }

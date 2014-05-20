@@ -21,7 +21,7 @@ import android.widget.SearchView;
 import android.widget.Toast;
 
 public class MainActivity extends Activity {
-	private final String TAG = MainActivity.class.getSimpleName();
+	private final String TAG = this.getClass().getSimpleName();
 
 	private final String SEARCH_URI_DEFAULT = "http://lema.rae.es/drae/srv/search?val=";
 
