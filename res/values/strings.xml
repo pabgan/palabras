@@ -6,6 +6,7 @@
     <string name="app_label">*Palabras*</string>
     <string name="hello_world">Hello world!</string>
     <string name="general_not_implemented">Not implemented</string>
+    <string name="general_delete">Delete</string>
     <!-- Action bar -->
     <string name="action_preferences">Settings</string>
     <string name="action_search">Search</string>
@@ -15,8 +16,9 @@
     <string name="title_activity_main">MainActivity</string>
     <!-- AboutActivity -->
     <string name="title_activity_about">About Palabras</string>
-    <string name="about_message">Developed by <b>Pablo Ganuza Vidal</b>. (pabloganuza@gmail.com)</string>
+    <string name="about_message">Developed by <b>Pablo Ganuza Vidal</b> (pabloganuza@gmail.com)</string>
     <string name="about_source_code">Source code at https://github.com/pablerkas/palabras</string>
+    <string name="about_thankyou">with technology from Goodrae.es</string>
 
     <!-- Settings -->
     <string name="title_activity_settings">Preferences</string>
@@ -25,6 +27,6 @@
     <string name="pref_summary_clear_search_history">Clear search history</string>
     <string name="pref_confirmation_clear_search_history">Are you sure you want to clear search history definitively?\n\nThis action can not be undone.</string>
     <string name="pref_title_definition_provider">Definitions provider</string>
-    <string name="pref_summary_definition_provider">Web service used to show search results.</string>
+    <string name="pref_summary_definition_provider">Web service used to show search results: </string>
 
 </resources>

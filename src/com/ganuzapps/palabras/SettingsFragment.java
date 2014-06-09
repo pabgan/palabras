@@ -6,8 +6,11 @@ package com.ganuzapps.palabras;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
+import android.preference.ListPreference;
 import android.preference.Preference;
+import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.PreferenceFragment;
+import android.preference.PreferenceManager;
 import android.provider.SearchRecentSuggestions;
 import android.widget.Toast;
 
@@ -28,11 +31,10 @@ public class SettingsFragment extends PreferenceFragment {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		// Load the preferences from an XML resource
-		addPreferencesFromResource(R.xml.preferences);
+		addPreferencesFromResource(R.xml.preferences);		
 
 		// Clear history button
 		Preference clearHistoryButton = (Preference) findPreference(PREFERENCE_CLEAR_HISTORY_BUTTON);
-
 		clearHistoryButton
 				.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
 
@@ -45,7 +47,7 @@ public class SettingsFragment extends PreferenceFragment {
 								.setTitle(
 										R.string.pref_title_clear_search_history);
 
-						builder.setPositiveButton(android.R.string.ok,
+						builder.setPositiveButton(R.string.general_delete,
 								new DialogInterface.OnClickListener() {
 									public void onClick(DialogInterface dialog,
 											int id) {
@@ -75,5 +77,32 @@ public class SettingsFragment extends PreferenceFragment {
 						return true;
 					}
 				});
+
+		// Search provider
+		final ListPreference searchProvider = (ListPreference) findPreference(PREFERENCE_SEARCH_PROVIDER);
+		searchProvider.setOnPreferenceChangeListener(new OnPreferenceChangeListener() {
+			
+			@Override
+			public boolean onPreferenceChange(Preference preference, Object newValue) {
+				
+				searchProvider.setSummary(getString(R.string.pref_summary_definition_provider) + " " + getSearchProviderKey((String) newValue));
+				return true;
+			}
+		});
+		
+		searchProvider.setSummary(getString(R.string.pref_summary_definition_provider) + " " + getSearchProviderKey(searchProvider.getValue()));
+	}
+	
+	private String getSearchProviderKey(String value) {
+		String[] entries = getResources().getStringArray(R.array.definition_providers_list_entries);
+		String[] values = getResources().getStringArray(R.array.definition_providers_list_values);
+		
+		for (int i = 0; i < entries.length; i++) {
+			if (values[i].equals(value)) {
+				return entries[i];
+			}
+		}
+		
+		return null;
 	}
 }

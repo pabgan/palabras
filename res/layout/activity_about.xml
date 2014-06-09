@@ -25,10 +25,18 @@
         android:text="@string/about_message" />
     
     <TextView
-        android:id="@+id/about_other"
+        android:id="@+id/about_thankyou"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/about_contact_info"
+        android:autoLink="all"
+        android:text="@string/about_thankyou" />
+    
+    <TextView
+        android:id="@+id/about_other"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/about_thankyou"
         android:autoLink="all"
         android:text="@string/about_source_code" />
 
