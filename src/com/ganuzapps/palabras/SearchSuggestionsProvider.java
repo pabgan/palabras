@@ -3,7 +3,7 @@ package com.ganuzapps.palabras;
 import android.content.SearchRecentSuggestionsProvider;
 
 public class SearchSuggestionsProvider extends SearchRecentSuggestionsProvider {
-	public final static String AUTHORITY = "com.ganuzapps.palabras.SearchSuggestionsProvider";
+	public final static String AUTHORITY = SearchSuggestionsProvider.class.getName();
 	public final static int MODE = DATABASE_MODE_QUERIES;
 
 	public SearchSuggestionsProvider() {

@@ -81,6 +81,10 @@ public class MainActivity extends Activity {
 		// Assumes current activity is the searchable activity
 		searchView.setSearchableInfo(searchManager
 				.getSearchableInfo(getComponentName()));
+		
+		if (!searchItem.expandActionView()) {
+			Log.w(TAG, "Search could not be expanded");
+		}
 
 		return super.onCreateOptionsMenu(menu);
 	}
