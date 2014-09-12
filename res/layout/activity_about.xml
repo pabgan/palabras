@@ -10,7 +10,7 @@
     
     <ImageView
         android:id="@+id/about_icon"
-        android:src="@drawable/ic_launcher"
+        android:src="@drawable/rae_logo_background"
         android:layout_width="match_parent"
         android:layout_height="64dp"
         android:scaleType="center"
