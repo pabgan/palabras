@@ -26,6 +26,7 @@ public class MainActivity extends Activity {
 	private final String SEARCH_URI_DEFAULT = "http://lema.rae.es/drae/srv/search?val=";
 
 	private WebView webView;
+	private SearchView searchView;
 	private ProgressBar progressBar;
 
 	// private SearchSuggestionsProvider searchRecentSuggestionsProvider;
@@ -42,12 +43,15 @@ public class MainActivity extends Activity {
 		webView.setWebViewClient(new WebViewClient() {
 			@Override
 			public void onPageStarted(WebView view, String url, Bitmap favicon) {
+				Log.d(TAG, "onPageStarted()");
+				searchView.setIconified(true);
 				progressBar.setVisibility(View.VISIBLE);
 				webView.setVisibility(View.GONE);
 			}
 
 			@Override
 			public void onPageFinished(WebView view, String url) {
+				Log.d(TAG, "onPageFinished()");
 				// Show webview and hide progress bar
 				webView.setVisibility(View.VISIBLE);
 				progressBar.setVisibility(View.GONE);
@@ -55,8 +59,7 @@ public class MainActivity extends Activity {
 		});
 
 		webView.getSettings().setJavaScriptEnabled(true);
-		searchRecentSuggestions = new SearchRecentSuggestions(this,
-				SearchSuggestionsProvider.AUTHORITY,
+		searchRecentSuggestions = new SearchRecentSuggestions(this, SearchSuggestionsProvider.AUTHORITY,
 				SearchSuggestionsProvider.MODE);
 
 		// Get the intent, verify the action and get the query
@@ -75,13 +78,11 @@ public class MainActivity extends Activity {
 
 		// Get the SearchView and set the searchable configuration
 		SearchManager searchManager = (SearchManager) getSystemService(Context.SEARCH_SERVICE);
-		SearchView searchView = (SearchView) menu.findItem(R.id.action_search)
-				.getActionView();
+		searchView = (SearchView) menu.findItem(R.id.action_search).getActionView();
 
 		// Assumes current activity is the searchable activity
-		searchView.setSearchableInfo(searchManager
-				.getSearchableInfo(getComponentName()));
-		
+		searchView.setSearchableInfo(searchManager.getSearchableInfo(getComponentName()));
+
 		if (!searchItem.expandActionView()) {
 			Log.w(TAG, "Search could not be expanded");
 		}
@@ -104,13 +105,10 @@ public class MainActivity extends Activity {
 	private void doSearch(String query) {
 		if (query != null && !query.isEmpty()) {
 			searchRecentSuggestions.saveRecentQuery(query, null);
-			SharedPreferences sharedPref = PreferenceManager
-					.getDefaultSharedPreferences(this);
-			String definitionProvider = sharedPref.getString(
-					SettingsActivity.DEFINITION_PROVIDER, SEARCH_URI_DEFAULT);
+			SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
+			String definitionProvider = sharedPref.getString(SettingsActivity.DEFINITION_PROVIDER, SEARCH_URI_DEFAULT);
 
-			Log.d(TAG, "Definition provider on preferences: "
-					+ definitionProvider);
+			Log.d(TAG, "Definition provider on preferences: " + definitionProvider);
 
 			webView.loadUrl(definitionProvider + query);
 		} else {
@@ -122,21 +120,19 @@ public class MainActivity extends Activity {
 	public boolean onOptionsItemSelected(MenuItem item) {
 		Log.d(TAG, "onOptionsItemSelected(item = " + item.toString());
 		switch (item.getItemId()) {
-		case R.id.action_search:
-			(Toast.makeText(getApplicationContext(), "Search selected",
-					Toast.LENGTH_SHORT)).show();
-			break;
-		case R.id.action_about:
-			startActivity(new Intent(this, AboutActivity.class));
-			break;
-		case R.id.action_settings:
-			startActivity(new Intent(this, SettingsActivity.class));
-			break;
-		default:
-			(Toast.makeText(getApplicationContext(),
-					getString(R.string.general_not_implemented),
-					Toast.LENGTH_SHORT)).show();
-			break;
+			case R.id.action_search:
+				(Toast.makeText(getApplicationContext(), "Search selected", Toast.LENGTH_SHORT)).show();
+				break;
+			case R.id.action_about:
+				startActivity(new Intent(this, AboutActivity.class));
+				break;
+			case R.id.action_settings:
+				startActivity(new Intent(this, SettingsActivity.class));
+				break;
+			default:
+				(Toast.makeText(getApplicationContext(), getString(R.string.general_not_implemented),
+						Toast.LENGTH_SHORT)).show();
+				break;
 		}
 
 		return super.onOptionsItemSelected(item);
@@ -146,11 +142,11 @@ public class MainActivity extends Activity {
 	public boolean onKeyDown(int keyCode, KeyEvent event) {
 		if (event.getAction() == KeyEvent.ACTION_DOWN) {
 			switch (keyCode) {
-			case KeyEvent.KEYCODE_BACK:
-				if (webView.canGoBack()) {
-					webView.goBack();
-					return true;
-				}
+				case KeyEvent.KEYCODE_BACK:
+					if (webView.canGoBack()) {
+						webView.goBack();
+						return true;
+					}
 			}
 		}
 
