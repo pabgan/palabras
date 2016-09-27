@@ -1,0 +1,7 @@
+#Tue Sep 27 17:07:31 CEST 2016
+base.0=D\:\\pablo\\Workspace\\palabras\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_59d5c1c690bd9c05b91083ff47db16e980cac959
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=D\:\\pablo\\Workspace\\palabras\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_70e3d1f826edc098345c174830913a0528f074d6\\classes.dex
+base.1=D\:\\pablo\\Workspace\\palabras\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_70e3d1f826edc098345c174830913a0528f074d6
+file.0=D\:\\pablo\\Workspace\\palabras\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_59d5c1c690bd9c05b91083ff47db16e980cac959\\classes.dex

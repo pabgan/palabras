@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "D:\\pablo\\Workspace\\palabras\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\rae_logo_background.png",
+        "source": "D:\\pablo\\Workspace\\palabras\\app\\src\\main\\res\\drawable-hdpi\\rae_logo_background.png"
+    },
+    {
+        "merged": "D:\\pablo\\Workspace\\palabras\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_launcher.png",
+        "source": "D:\\pablo\\Workspace\\palabras\\app\\src\\main\\res\\drawable-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\pablo\\Workspace\\palabras\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\rae_logo.png",
+        "source": "D:\\pablo\\Workspace\\palabras\\app\\src\\main\\res\\drawable-hdpi\\rae_logo.png"
+    }
+]
