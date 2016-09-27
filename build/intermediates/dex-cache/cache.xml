@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="D:\pablo\Workspace\palabras\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="d660e3d8c82731108bc0bea56ae3d9c2a01d0ff5">
+        <dex dex="D:\pablo\Workspace\palabras\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_59d5c1c690bd9c05b91083ff47db16e980cac959\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\pablo\Workspace\palabras\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="406437d864fcfdb5c88e21a9ba64a190e90693a6">
+        <dex dex="D:\pablo\Workspace\palabras\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_70e3d1f826edc098345c174830913a0528f074d6\classes.dex" />
+    </item>
+
+</items>

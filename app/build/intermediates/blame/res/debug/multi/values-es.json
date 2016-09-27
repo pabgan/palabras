@@ -1,0 +1,406 @@
+[
+    {
+        "outputFile": "D:\\pablo\\Workspace\\palabras\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-es\\values-es.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 108,
+                    "endOffset": 159
+                },
+                "from": {
+                    "file": "D:\\pablo\\Workspace\\palabras\\app\\src\\main\\res\\values-es\\strings.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 802,
+                        "endColumn": 108,
+                        "endOffset": 906
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 164,
+                    "endColumn": 100,
+                    "endOffset": 260
+                },
+                "from": {
+                    "file": "D:\\pablo\\Workspace\\palabras\\app\\src\\main\\res\\values-es\\strings.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 4,
+                        "startOffset": 912,
+                        "endColumn": 100,
+                        "endOffset": 1008
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 265,
+                    "endColumn": 71,
+                    "endOffset": 332
+                },
+                "from": {
+                    "file": "D:\\pablo\\Workspace\\palabras\\app\\src\\main\\res\\values-es\\strings.xml",
+                    "position": {
+                        "startLine": 23,
+                        "startColumn": 4,
+                        "startOffset": 1014,
+                        "endColumn": 71,
+                        "endOffset": 1081
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 337,
+                    "endColumn": 50,
+                    "endOffset": 383
+                },
+                "from": {
+                    "file": "D:\\pablo\\Workspace\\palabras\\app\\src\\main\\res\\values-es\\strings.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 548,
+                        "endColumn": 50,
+                        "endOffset": 594
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 388,
+                    "endColumn": 54,
+                    "endOffset": 438
+                },
+                "from": {
+                    "file": "D:\\pablo\\Workspace\\palabras\\app\\src\\main\\res\\values-es\\strings.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 383,
+                        "endColumn": 54,
+                        "endOffset": 433
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 443,
+                    "endColumn": 48,
+                    "endOffset": 487
+                },
+                "from": {
+                    "file": "D:\\pablo\\Workspace\\palabras\\app\\src\\main\\res\\values-es\\strings.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 439,
+                        "endColumn": 48,
+                        "endOffset": 483
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 492,
+                    "endColumn": 48,
+                    "endOffset": 536
+                },
+                "from": {
+                    "file": "D:\\pablo\\Workspace\\palabras\\app\\src\\main\\res\\values-es\\strings.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 128,
+                        "endColumn": 48,
+                        "endOffset": 172
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 541,
+                    "endColumn": 45,
+                    "endOffset": 582
+                },
+                "from": {
+                    "file": "D:\\pablo\\Workspace\\palabras\\app\\src\\main\\res\\values-es\\strings.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 81,
+                        "endColumn": 45,
+                        "endOffset": 122
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 587,
+                    "endColumn": 49,
+                    "endOffset": 632
+                },
+                "from": {
+                    "file": "D:\\pablo\\Workspace\\palabras\\app\\src\\main\\res\\values-es\\strings.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 301,
+                        "endColumn": 49,
+                        "endOffset": 346
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 637,
+                    "endColumn": 67,
+                    "endOffset": 700
+                },
+                "from": {
+                    "file": "D:\\pablo\\Workspace\\palabras\\app\\src\\main\\res\\values-es\\strings.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 232,
+                        "endColumn": 67,
+                        "endOffset": 295
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 705,
+                    "endColumn": 52,
+                    "endOffset": 753
+                },
+                "from": {
+                    "file": "D:\\pablo\\Workspace\\palabras\\app\\src\\main\\res\\values-es\\strings.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 178,
+                        "endColumn": 52,
+                        "endOffset": 226
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 13,
+                    "startColumn": 4,
+                    "startOffset": 758,
+                    "endColumn": 60,
+                    "endOffset": 814
+                },
+                "from": {
+                    "file": "D:\\pablo\\Workspace\\palabras\\app\\src\\main\\res\\values-es\\strings.xml",
+                    "position": {
+                        "startLine": 27,
+                        "startColumn": 4,
+                        "startOffset": 1178,
+                        "endColumn": 60,
+                        "endOffset": 1234
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 819,
+                    "endColumn": 179,
+                    "endOffset": 994
+                },
+                "from": {
+                    "file": "D:\\pablo\\Workspace\\palabras\\app\\src\\main\\res\\values-es\\strings.xml",
+                    "position": {
+                        "startLine": 30,
+                        "startColumn": 4,
+                        "startOffset": 1436,
+                        "endColumn": 179,
+                        "endOffset": 1611
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 15,
+                    "startColumn": 4,
+                    "startOffset": 999,
+                    "endColumn": 103,
+                    "endOffset": 1098
+                },
+                "from": {
+                    "file": "D:\\pablo\\Workspace\\palabras\\app\\src\\main\\res\\values-es\\strings.xml",
+                    "position": {
+                        "startLine": 29,
+                        "startColumn": 4,
+                        "startOffset": 1331,
+                        "endColumn": 103,
+                        "endOffset": 1430
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 1103,
+                    "endColumn": 130,
+                    "endOffset": 1229
+                },
+                "from": {
+                    "file": "D:\\pablo\\Workspace\\palabras\\app\\src\\main\\res\\values-es\\strings.xml",
+                    "position": {
+                        "startLine": 32,
+                        "startColumn": 4,
+                        "startOffset": 1703,
+                        "endColumn": 130,
+                        "endOffset": 1829
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 17,
+                    "startColumn": 4,
+                    "startOffset": 1234,
+                    "endColumn": 89,
+                    "endOffset": 1319
+                },
+                "from": {
+                    "file": "D:\\pablo\\Workspace\\palabras\\app\\src\\main\\res\\values-es\\strings.xml",
+                    "position": {
+                        "startLine": 28,
+                        "startColumn": 4,
+                        "startOffset": 1240,
+                        "endColumn": 89,
+                        "endOffset": 1325
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 18,
+                    "startColumn": 4,
+                    "startOffset": 1324,
+                    "endColumn": 84,
+                    "endOffset": 1404
+                },
+                "from": {
+                    "file": "D:\\pablo\\Workspace\\palabras\\app\\src\\main\\res\\values-es\\strings.xml",
+                    "position": {
+                        "startLine": 31,
+                        "startColumn": 4,
+                        "startOffset": 1617,
+                        "endColumn": 84,
+                        "endOffset": 1697
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 19,
+                    "startColumn": 4,
+                    "startOffset": 1409,
+                    "endColumn": 57,
+                    "endOffset": 1462
+                },
+                "from": {
+                    "file": "D:\\pablo\\Workspace\\palabras\\app\\src\\main\\res\\values-es\\strings.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 489,
+                        "endColumn": 57,
+                        "endOffset": 542
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 20,
+                    "startColumn": 4,
+                    "startOffset": 1467,
+                    "endColumn": 67,
+                    "endOffset": 1530
+                },
+                "from": {
+                    "file": "D:\\pablo\\Workspace\\palabras\\app\\src\\main\\res\\values-es\\strings.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 733,
+                        "endColumn": 67,
+                        "endOffset": 796
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 21,
+                    "startColumn": 4,
+                    "startOffset": 1535,
+                    "endColumn": 60,
+                    "endOffset": 1591
+                },
+                "from": {
+                    "file": "D:\\pablo\\Workspace\\palabras\\app\\src\\main\\res\\values-es\\strings.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 633,
+                        "endColumn": 60,
+                        "endOffset": 689
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 22,
+                    "startColumn": 4,
+                    "startOffset": 1596,
+                    "endColumn": 64,
+                    "endOffset": 1656
+                },
+                "from": {
+                    "file": "D:\\pablo\\Workspace\\palabras\\app\\src\\main\\res\\values-es\\strings.xml",
+                    "position": {
+                        "startLine": 26,
+                        "startColumn": 4,
+                        "startOffset": 1112,
+                        "endColumn": 64,
+                        "endOffset": 1172
+                    }
+                }
+            }
+        ]
+    }
+]

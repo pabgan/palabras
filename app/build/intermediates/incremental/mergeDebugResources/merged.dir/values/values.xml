@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="definition_providers_list_entries">
+        <item>RAE</item>
+        <item>GoodRAE</item>
+    </string-array>
+    <string-array name="definition_providers_list_values">
+        <item>http://lema.rae.es/drae/srv/search?val=</item>
+        <item>http://recursosdidacticos.es/goodrae/indexmov.php?buscar=</item>
+    </string-array>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <string name="about_message">Developed by <b>Pablo Ganuza Vidal</b> (pabloganuza@gmail.com)</string>
+    <string name="about_source_code">Source code at https://github.com/pablerkas/palabras</string>
+    <string name="about_thankyou">with technology from Goodrae.es</string>
+    <string name="action_about">About</string>
+    <string name="action_preferences">Settings</string>
+    <string name="action_search">Search</string>
+    <string name="app_label">*Palabras*</string>
+    <string name="app_name">Palabras</string>
+    <string name="general_delete">Delete</string>
+    <string name="general_not_implemented">Not implemented</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="pref_category_privacy">Privacy</string>
+    <string name="pref_confirmation_clear_search_history">Are you sure you want to clear search history definitively?\n\nThis action can not be undone.</string>
+    <string name="pref_summary_clear_search_history">Clear search history</string>
+    <string name="pref_summary_definition_provider">Web service used to show search results: </string>
+    <string name="pref_title_clear_search_history">Clear search history</string>
+    <string name="pref_title_definition_provider">Definitions provider</string>
+    <string name="search_hint">Search for a definition</string>
+    <string name="title_activity_about">About Palabras</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_settings">Preferences</string>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+</resources>
